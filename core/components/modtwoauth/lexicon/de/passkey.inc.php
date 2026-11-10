@@ -1,0 +1,43 @@
+<?php
+
+// WebAuthn / Passkey registration and login.
+$_lang['modtwoauth_webauthn_disable_before_register'] = 'Deaktivieren Sie zuerst die aktuelle 2FA und registrieren Sie dann den neuen Schlüssel.';
+$_lang['modtwoauth_webauthn_fatal'] = 'Kritischer Serverfehler bei der WebAuthn-Verarbeitung. Prüfen Sie das MODX-Protokoll.';
+$_lang['modtwoauth_webauthn_frontend_error'] = 'WebAuthn-Fehler. Prüfen Sie das MODX-Protokoll.';
+$_lang['modtwoauth_webauthn_internal_error'] = 'Interner WebAuthn-Fehler. Details wurden im MODX-Protokoll aufgezeichnet.';
+$_lang['modtwoauth_webauthn_invalid_base64'] = 'Der Server hat ungültige WebAuthn-Base64URL-Daten zurückgegeben.';
+$_lang['modtwoauth_webauthn_invalid_data'] = 'Ungültige WebAuthn-Daten.';
+$_lang['modtwoauth_webauthn_invalid_rpid'] = 'Ungültige WebAuthn RP ID.';
+$_lang['modtwoauth_webauthn_login_to_register'] = 'Melden Sie sich beim Website-Konto an, um einen Passkey zu registrieren.';
+$_lang['modtwoauth_webauthn_not_enabled_account'] = 'WebAuthn ist für dieses Konto nicht aktiviert.';
+$_lang['modtwoauth_webauthn_not_enabled_user'] = 'WebAuthn ist für diesen Benutzer nicht aktiviert.';
+$_lang['modtwoauth_webauthn_registered'] = 'Der WebAuthn-Schlüssel wurde erfolgreich registriert. Sie können ihn jetzt als 2FA-Methode aktivieren.';
+$_lang['modtwoauth_webauthn_rejected'] = 'WebAuthn wurde abgelehnt.';
+$_lang['modtwoauth_webauthn_save_failed'] = 'Die WebAuthn-Einstellungen konnten nicht gespeichert werden. Registrierung abgebrochen.';
+$_lang['modtwoauth_webauthn_session_expired'] = 'Die WebAuthn-Sitzung ist abgelaufen. Melden Sie sich erneut an.';
+$_lang['modtwoauth_webauthn_settings_save_failed'] = 'Die WebAuthn-Einstellungen konnten nicht gespeichert werden.';
+$_lang['modtwoauth_webauthn_start_failed'] = 'WebAuthn konnte nicht gestartet werden.';
+$_lang['modtwoauth_webauthn_registration_expired'] = 'Die WebAuthn-Registrierungssitzung ist abgelaufen. Beginnen Sie von vorn.';
+$_lang['modtwoauth_webauthn_invalid_type'] = 'Ungültiger WebAuthn-Antworttyp.';
+$_lang['modtwoauth_webauthn_invalid_challenge'] = 'Die WebAuthn-Challenge-Prüfung ist fehlgeschlagen. Laden Sie die Seite neu und versuchen Sie es erneut.';
+$_lang['modtwoauth_webauthn_invalid_origin'] = 'Der WebAuthn-Origin stimmt nicht mit der Domain der Website überein.';
+$_lang['modtwoauth_webauthn_attestation_parse_failed'] = 'Die WebAuthn-Registrierungsdaten konnten nicht analysiert werden.';
+$_lang['modtwoauth_webauthn_authenticator_missing'] = 'In der WebAuthn-Antwort fehlen die Authenticator-Daten.';
+$_lang['modtwoauth_webauthn_authenticator_invalid'] = 'Ungültige WebAuthn-Authenticator-Daten.';
+$_lang['modtwoauth_webauthn_rp_mismatch'] = 'Die RP ID stimmt nicht mit der Domain der Website überein.';
+$_lang['modtwoauth_webauthn_registration_not_confirmed'] = 'Der Authenticator hat die Registrierung nicht bestätigt.';
+$_lang['modtwoauth_webauthn_credential_id_missing'] = 'In der WebAuthn-Antwort fehlt die Schlüssel-ID.';
+$_lang['modtwoauth_webauthn_credential_id_invalid'] = 'Ungültige WebAuthn-Schlüssel-ID.';
+$_lang['modtwoauth_webauthn_credential_id_mismatch'] = 'Die WebAuthn-Schlüssel-ID stimmt nicht mit den Authenticator-Daten überein.';
+$_lang['modtwoauth_webauthn_raw_id_mismatch'] = 'Die empfangene WebAuthn-Schlüssel-ID stimmt nicht mit den Originaldaten überein.';
+$_lang['modtwoauth_webauthn_public_key_missing'] = 'In der WebAuthn-Antwort fehlt der öffentliche Schlüssel.';
+$_lang['modtwoauth_webauthn_cose_invalid'] = 'Der öffentliche WebAuthn-Schlüssel konnte nicht gelesen werden.';
+$_lang['modtwoauth_webauthn_cose_unsupported'] = 'Der WebAuthn-Schlüsselalgorithmus wird nicht unterstützt. Verwenden Sie ES256 oder RS256.';
+$_lang['modtwoauth_webauthn_already_registered'] = 'Dieser Schlüssel ist bereits registriert.';
+$_lang['modtwoauth_webauthn_login_expired_refresh'] = 'Die WebAuthn-Anmeldesitzung ist abgelaufen. Laden Sie die Seite neu und melden Sie sich erneut an.';
+$_lang['modtwoauth_webauthn_not_registered_for_user'] = 'Dieser Schlüssel ist für den aktuellen Benutzer nicht registriert.';
+$_lang['modtwoauth_webauthn_user_not_present'] = 'Der Authenticator hat die Benutzeranwesenheit nicht bestätigt.';
+$_lang['modtwoauth_webauthn_counter_invalid'] = 'Der WebAuthn-Schlüsselzähler hat sich nicht erhöht. Der Schlüssel könnte kopiert worden sein.';
+$_lang['modtwoauth_webauthn_public_key_read_failed'] = 'Der gespeicherte öffentliche WebAuthn-Schlüssel konnte nicht gelesen werden.';
+$_lang['modtwoauth_webauthn_signature_invalid'] = 'Die WebAuthn-Signatur ist ungültig.';
+$_lang['modtwoauth_webauthn_counter_save_failed'] = 'Der WebAuthn-Zähler konnte nicht gespeichert werden. Melden Sie sich erneut an.';

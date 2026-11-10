@@ -1,0 +1,43 @@
+<?php
+
+// WebAuthn / Passkey registration and login.
+$_lang['modtwoauth_webauthn_disable_before_register'] = 'Сначала отключите текущую 2FA, затем зарегистрируйте новый ключ.';
+$_lang['modtwoauth_webauthn_fatal'] = 'Критическая ошибка сервера при обработке WebAuthn. Проверьте журнал MODX.';
+$_lang['modtwoauth_webauthn_frontend_error'] = 'Ошибка WebAuthn. Проверьте журнал MODX.';
+$_lang['modtwoauth_webauthn_internal_error'] = 'Внутренняя ошибка WebAuthn. Подробности записаны в журнал MODX.';
+$_lang['modtwoauth_webauthn_invalid_base64'] = 'Сервер вернул некорректные Base64URL-данные WebAuthn.';
+$_lang['modtwoauth_webauthn_invalid_data'] = 'Некорректные данные WebAuthn.';
+$_lang['modtwoauth_webauthn_invalid_rpid'] = 'Некорректный WebAuthn RP ID.';
+$_lang['modtwoauth_webauthn_login_to_register'] = 'Войдите в аккаунт сайта, чтобы зарегистрировать Passkey.';
+$_lang['modtwoauth_webauthn_not_enabled_account'] = 'WebAuthn не включён для этой учётной записи.';
+$_lang['modtwoauth_webauthn_not_enabled_user'] = 'WebAuthn не включён для этого пользователя.';
+$_lang['modtwoauth_webauthn_registered'] = 'WebAuthn-ключ успешно зарегистрирован. Теперь его можно включить как способ 2FA.';
+$_lang['modtwoauth_webauthn_rejected'] = 'WebAuthn отклонён.';
+$_lang['modtwoauth_webauthn_save_failed'] = 'Не удалось сохранить настройки WebAuthn. Регистрация отменена.';
+$_lang['modtwoauth_webauthn_session_expired'] = 'Сессия WebAuthn истекла. Войдите снова.';
+$_lang['modtwoauth_webauthn_settings_save_failed'] = 'Не удалось сохранить настройки WebAuthn.';
+$_lang['modtwoauth_webauthn_start_failed'] = 'Не удалось начать WebAuthn.';
+$_lang['modtwoauth_webauthn_registration_expired'] = 'Сессия регистрации WebAuthn истекла. Начните заново.';
+$_lang['modtwoauth_webauthn_invalid_type'] = 'Некорректный тип ответа WebAuthn.';
+$_lang['modtwoauth_webauthn_invalid_challenge'] = 'Проверка WebAuthn challenge не пройдена. Обновите страницу и попробуйте снова.';
+$_lang['modtwoauth_webauthn_invalid_origin'] = 'Источник WebAuthn не совпадает с доменом сайта.';
+$_lang['modtwoauth_webauthn_attestation_parse_failed'] = 'Не удалось разобрать данные регистрации WebAuthn.';
+$_lang['modtwoauth_webauthn_authenticator_missing'] = 'В ответе WebAuthn отсутствуют данные аутентификатора.';
+$_lang['modtwoauth_webauthn_authenticator_invalid'] = 'Некорректные данные аутентификатора WebAuthn.';
+$_lang['modtwoauth_webauthn_rp_mismatch'] = 'RP ID не совпадает с доменом сайта.';
+$_lang['modtwoauth_webauthn_registration_not_confirmed'] = 'Аутентификатор не подтвердил регистрацию.';
+$_lang['modtwoauth_webauthn_credential_id_missing'] = 'В ответе WebAuthn отсутствует ID ключа.';
+$_lang['modtwoauth_webauthn_credential_id_invalid'] = 'Некорректный ID ключа WebAuthn.';
+$_lang['modtwoauth_webauthn_credential_id_mismatch'] = 'ID ключа WebAuthn не совпадает с данными аутентификатора.';
+$_lang['modtwoauth_webauthn_raw_id_mismatch'] = 'Полученный ID ключа WebAuthn не совпадает с исходными данными.';
+$_lang['modtwoauth_webauthn_public_key_missing'] = 'В ответе WebAuthn отсутствует открытый ключ.';
+$_lang['modtwoauth_webauthn_cose_invalid'] = 'Не удалось прочитать открытый ключ WebAuthn.';
+$_lang['modtwoauth_webauthn_cose_unsupported'] = 'Алгоритм ключа WebAuthn не поддерживается. Используйте ES256 или RS256.';
+$_lang['modtwoauth_webauthn_already_registered'] = 'Этот ключ уже зарегистрирован.';
+$_lang['modtwoauth_webauthn_login_expired_refresh'] = 'Сессия входа WebAuthn истекла. Обновите страницу и войдите снова.';
+$_lang['modtwoauth_webauthn_not_registered_for_user'] = 'Этот ключ не зарегистрирован для текущего пользователя.';
+$_lang['modtwoauth_webauthn_user_not_present'] = 'Аутентификатор не подтвердил присутствие пользователя.';
+$_lang['modtwoauth_webauthn_counter_invalid'] = 'Счётчик ключа WebAuthn не увеличился. Возможно, ключ был скопирован.';
+$_lang['modtwoauth_webauthn_public_key_read_failed'] = 'Не удалось прочитать сохранённый открытый ключ WebAuthn.';
+$_lang['modtwoauth_webauthn_signature_invalid'] = 'Подпись WebAuthn недействительна.';
+$_lang['modtwoauth_webauthn_counter_save_failed'] = 'Не удалось сохранить счётчик WebAuthn. Повторите вход.';

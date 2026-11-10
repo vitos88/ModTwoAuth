@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="ModTwoAuth\Model" baseClass="xPDO\Om\xPDOObject" platform="mysql" defaultEngine="InnoDB" version="3.0">
+    <object class="TwoAuthSession" table="twoauth_sessions" extends="xPDO\Om\xPDOSimpleObject">
+        <field key="user_id" dbtype="int" precision="10" phptype="integer" null="false" />
+        <field key="session_token" dbtype="varchar" precision="64" phptype="string" null="false" />
+        <!-- Реальный PHP-session id для сверки с хранилищем сессий MODX в SessionTracker::gc() -->
+        <field key="php_session_id" dbtype="varchar" precision="128" phptype="string" null="true" />
+        <field key="ip_address" dbtype="varchar" precision="45" phptype="string" null="true" />
+        <field key="user_agent" dbtype="text" phptype="string" null="true" />
+        <field key="last_active" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="created_at" dbtype="datetime" phptype="datetime" null="true" />
+        <index alias="user_id" name="user_id" primary="false" unique="false" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false" />
+        </index>
+        <index alias="session_token" name="session_token" primary="false" unique="true" type="BTREE">
+            <column key="session_token" length="" collation="A" null="false" />
+        </index>
+        <aggregate alias="User" class="MODX\Revolution\modUser" local="user_id" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+    <object class="TwoAuthUserSetting" table="twoauth_user_settings" extends="xPDO\Om\xPDOSimpleObject">
+        <field key="user_id" dbtype="int" precision="10" phptype="integer" null="false" />
+        <field key="provider" dbtype="varchar" precision="20" phptype="string" null="false" default="totp" />
+        <field key="contact_value" dbtype="varchar" precision="255" phptype="string" null="true" />
+        <field key="secret" dbtype="varchar" precision="255" phptype="string" null="true" />
+        <field key="is_enabled" dbtype="tinyint" precision="1" phptype="integer" null="false" default="0" />
+        <field key="is_verified" dbtype="tinyint" precision="1" phptype="integer" null="false" default="0" />
+        <field key="updated_at" dbtype="datetime" phptype="datetime" null="true" />
+        <field key="login_attempts" dbtype="int" precision="10" phptype="integer" null="false" default="0" />
+        <field key="locked_until" dbtype="datetime" phptype="datetime" null="true" />
+        <!-- RFC 6238: timestep последнего принятого TOTP-кода, для защиты от повторного использования кода -->
+        <field key="last_totp_counter" dbtype="bigint" precision="20" phptype="integer" null="true" default="NULL" />
+        <index alias="user_id" name="user_id" primary="false" unique="true" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false" />
+        </index>
+        <aggregate alias="User" class="MODX\Revolution\modUser" local="user_id" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+    <object class="TwoAuthTelegramRequest" table="twoauth_telegram_requests" extends="xPDO\Om\xPDOSimpleObject">
+        <field key="user_id" dbtype="int" precision="10" phptype="integer" null="false" />
+        <field key="kind" dbtype="varchar" precision="10" phptype="string" null="false" default="link" />
+        <field key="token_hash" dbtype="varchar" precision="64" phptype="string" null="false" />
+        <field key="telegram_user_id" dbtype="varchar" precision="32" phptype="string" null="true" />
+        <field key="chat_id" dbtype="varchar" precision="32" phptype="string" null="true" />
+        <field key="status" dbtype="varchar" precision="20" phptype="string" null="false" default="pending" />
+        <field key="code_hash" dbtype="varchar" precision="255" phptype="string" null="true" />
+        <field key="session_hash" dbtype="varchar" precision="64" phptype="string" null="true" />
+        <field key="created_at" dbtype="datetime" phptype="datetime" null="false" />
+        <field key="expires_at" dbtype="datetime" phptype="datetime" null="false" />
+        <field key="confirmed_at" dbtype="datetime" phptype="datetime" null="true" />
+        <index alias="user_id" name="user_id" primary="false" unique="false" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false" />
+        </index>
+        <index alias="kind" name="kind" primary="false" unique="false" type="BTREE">
+            <column key="kind" length="" collation="A" null="false" />
+        </index>
+        <index alias="token_hash" name="token_hash" primary="false" unique="true" type="BTREE">
+            <column key="token_hash" length="" collation="A" null="false" />
+        </index>
+        <index alias="status" name="status" primary="false" unique="false" type="BTREE">
+            <column key="status" length="" collation="A" null="false" />
+        </index>
+        <index alias="session_hash" name="session_hash" primary="false" unique="false" type="BTREE">
+            <column key="session_hash" length="" collation="A" null="false" />
+        </index>
+        <index alias="expires_at" name="expires_at" primary="false" unique="false" type="BTREE">
+            <column key="expires_at" length="" collation="A" null="false" />
+        </index>
+        <aggregate alias="User" class="MODX\Revolution\modUser" local="user_id" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+    <object class="TwoAuthWebAuthnCredential" table="twoauth_webauthn_credentials" extends="xPDO\Om\xPDOSimpleObject">
+        <field key="user_id" dbtype="int" precision="10" phptype="integer" null="false" />
+        <field key="credential_id" dbtype="varchar" precision="512" phptype="string" null="false" />
+        <field key="public_key" dbtype="text" phptype="string" null="false" />
+        <field key="sign_count" dbtype="int" precision="10" phptype="integer" null="false" default="0" />
+        <field key="name" dbtype="varchar" precision="120" phptype="string" null="true" />
+        <field key="created_at" dbtype="datetime" phptype="datetime" null="false" />
+        <field key="last_used_at" dbtype="datetime" phptype="datetime" null="true" />
+        <index alias="user_id" name="user_id" primary="false" unique="false" type="BTREE">
+            <column key="user_id" length="" collation="A" null="false" />
+        </index>
+        <index alias="credential_id" name="credential_id" primary="false" unique="true" type="BTREE">
+            <column key="credential_id" length="" collation="A" null="false" />
+        </index>
+        <aggregate alias="User" class="MODX\Revolution\modUser" local="user_id" foreign="id" cardinality="one" owner="foreign" />
+    </object>
+</model>

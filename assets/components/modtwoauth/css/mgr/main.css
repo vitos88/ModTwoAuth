@@ -1,0 +1,159 @@
+/* Grid */
+.modtwoauth-modtwoauth-row-disabled { font-style: italic; opacity: .6; color: #555; }
+.x-grid3-col-actions { padding: 3px 0 3px 5px; }
+
+/* Actions */
+.action-red { color: darkred !important; }
+.action-green { color: darkgreen !important; }
+.action-blue { color: cadetblue !important; }
+.action-yellow { color: goldenrod !important; }
+.action-gray { color: dimgray !important; }
+ul.modtwoauth-row-actions { margin: 0; padding: 0; list-style: none; }
+ul.modtwoauth-row-actions li { float: left; }
+ul.modtwoauth-row-actions .modtwoauth-btn { padding: 5px; margin-right: 2px; min-width: 26px; font-size: inherit; }
+
+/* Action menu */
+a.x-menu-item .x-menu-item-text, a.x-menu-item .x-menu-item-text .icon { cursor: pointer; }
+a.x-menu-item .x-menu-item-text .icon { line-height: 16px; top: auto; }
+.x-menu-list .icon { min-width: 1em; text-align: center; }
+.x-menu-list-item:hover .icon { color: inherit !important; }
+ul.modtwoauth-row-actions .actions-menu { width: 40px; }
+ul.modtwoauth-row-actions .actions-menu:after { content: " \f107"; }
+
+/* Search field */
+.x-field-search-clear,
+.x-field-search-go { border-left: 1px solid #e4e4e4 !important; }
+.x-field-search-clear:hover,
+.x-field-search-go:hover { border-left-color: transparent !important; }
+.x-field-search-clear:before { content: '\f00d' !important; }
+.x-field-search-go { right: 31px !important; border-radius: 0 !important; }
+.x-field-search-go:before { content: '\f002' !important; }
+
+/* Buttons */
+.modtwoauth-btn { display: inline-block; margin-bottom: 0; font-weight: normal; text-align: center; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; background-image: none; border: 1px solid transparent; white-space: nowrap; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; border-radius: 4px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none }
+.modtwoauth-btn:focus, .modtwoauth-btn:active:focus, .modtwoauth-btn.active:focus, .modtwoauth-btn.focus, .modtwoauth-btn:active.focus, .modtwoauth-btn.active.focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px }
+.modtwoauth-btn:hover, .modtwoauth-btn:focus, .modtwoauth-btn.focus { color: #333; text-decoration: none }
+.modtwoauth-btn:active, .modtwoauth-btn.active { outline: 0; background-image: none; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125) }
+.modtwoauth-btn.disabled, .modtwoauth-btn[disabled], fieldset[disabled] .modtwoauth-btn { cursor: not-allowed; opacity: .65; filter: alpha(opacity=65); -webkit-box-shadow: none; box-shadow: none }
+a.modtwoauth-btn.disabled, fieldset[disabled] a.modtwoauth-btn { pointer-events: none }
+.modtwoauth-btn-default { color: #333; background-color: #fff; border-color: #ccc }
+.modtwoauth-btn-default:focus, .modtwoauth-btn-default.focus { color: #333; background-color: #e6e6e6; border-color: #8c8c8c }
+.modtwoauth-btn-default:hover { color: #333; background-color: #e6e6e6; border-color: #adadad }
+.modtwoauth-btn-default:active, .modtwoauth-btn-default.active, .open > .dropdown-toggle.modtwoauth-btn-default { color: #333; background-color: #e6e6e6; border-color: #adadad }
+.modtwoauth-btn-default:active:hover, .modtwoauth-btn-default.active:hover, .open > .dropdown-toggle.modtwoauth-btn-default:hover, .modtwoauth-btn-default:active:focus, .modtwoauth-btn-default.active:focus, .open > .dropdown-toggle.modtwoauth-btn-default:focus, .modtwoauth-btn-default:active.focus, .modtwoauth-btn-default.active.focus, .open > .dropdown-toggle.modtwoauth-btn-default.focus { color: #333; background-color: #d4d4d4; border-color: #8c8c8c }
+.modtwoauth-btn-default:active, .modtwoauth-btn-default.active, .open > .dropdown-toggle.modtwoauth-btn-default { background-image: none }
+.modtwoauth-btn-default.disabled:hover, .modtwoauth-btn-default[disabled]:hover, fieldset[disabled] .modtwoauth-btn-default:hover, .modtwoauth-btn-default.disabled:focus, .modtwoauth-btn-default[disabled]:focus, fieldset[disabled] .modtwoauth-btn-default:focus, .modtwoauth-btn-default.disabled.focus, .modtwoauth-btn-default[disabled].focus, fieldset[disabled] .modtwoauth-btn-default.focus { background-color: #fff; border-color: #ccc }
+.modtwoauth-btn-default .badge { color: #fff; background-color: #333 }
+.modtwoauth-btn-primary { color: #fff; background-color: #337ab7; border-color: #2e6da4 }
+.modtwoauth-btn-primary:focus, .modtwoauth-btn-primary.focus { color: #fff; background-color: #286090; border-color: #122b40 }
+.modtwoauth-btn-primary:hover { color: #fff; background-color: #286090; border-color: #204d74 }
+.modtwoauth-btn-primary:active, .modtwoauth-btn-primary.active, .open > .dropdown-toggle.modtwoauth-btn-primary { color: #fff; background-color: #286090; border-color: #204d74 }
+.modtwoauth-btn-primary:active:hover, .modtwoauth-btn-primary.active:hover, .open > .dropdown-toggle.modtwoauth-btn-primary:hover, .modtwoauth-btn-primary:active:focus, .modtwoauth-btn-primary.active:focus, .open > .dropdown-toggle.modtwoauth-btn-primary:focus, .modtwoauth-btn-primary:active.focus, .modtwoauth-btn-primary.active.focus, .open > .dropdown-toggle.modtwoauth-btn-primary.focus { color: #fff; background-color: #204d74; border-color: #122b40 }
+.modtwoauth-btn-primary:active, .modtwoauth-btn-primary.active, .open > .dropdown-toggle.modtwoauth-btn-primary { background-image: none }
+.modtwoauth-btn-primary.disabled:hover, .modtwoauth-btn-primary[disabled]:hover, fieldset[disabled] .modtwoauth-btn-primary:hover, .modtwoauth-btn-primary.disabled:focus, .modtwoauth-btn-primary[disabled]:focus, fieldset[disabled] .modtwoauth-btn-primary:focus, .modtwoauth-btn-primary.disabled.focus, .modtwoauth-btn-primary[disabled].focus, fieldset[disabled] .modtwoauth-btn-primary.focus { background-color: #337ab7; border-color: #2e6da4 }
+.modtwoauth-btn-primary .badge { color: #337ab7; background-color: #fff }
+.modtwoauth-btn-success { color: #fff; background-color: #5cb85c; border-color: #4cae4c }
+.modtwoauth-btn-success:focus, .modtwoauth-btn-success.focus { color: #fff; background-color: #449d44; border-color: #255625 }
+.modtwoauth-btn-success:hover { color: #fff; background-color: #449d44; border-color: #398439 }
+.modtwoauth-btn-success:active, .modtwoauth-btn-success.active, .open > .dropdown-toggle.modtwoauth-btn-success { color: #fff; background-color: #449d44; border-color: #398439 }
+.modtwoauth-btn-success:active:hover, .modtwoauth-btn-success.active:hover, .open > .dropdown-toggle.modtwoauth-btn-success:hover, .modtwoauth-btn-success:active:focus, .modtwoauth-btn-success.active:focus, .open > .dropdown-toggle.modtwoauth-btn-success:focus, .modtwoauth-btn-success:active.focus, .modtwoauth-btn-success.active.focus, .open > .dropdown-toggle.modtwoauth-btn-success.focus { color: #fff; background-color: #398439; border-color: #255625 }
+.modtwoauth-btn-success:active, .modtwoauth-btn-success.active, .open > .dropdown-toggle.modtwoauth-btn-success { background-image: none }
+.modtwoauth-btn-success.disabled:hover, .modtwoauth-btn-success[disabled]:hover, fieldset[disabled] .modtwoauth-btn-success:hover, .modtwoauth-btn-success.disabled:focus, .modtwoauth-btn-success[disabled]:focus, fieldset[disabled] .modtwoauth-btn-success:focus, .modtwoauth-btn-success.disabled.focus, .modtwoauth-btn-success[disabled].focus, fieldset[disabled] .modtwoauth-btn-success.focus { background-color: #5cb85c; border-color: #4cae4c }
+.modtwoauth-btn-success .badge { color: #5cb85c; background-color: #fff }
+.modtwoauth-btn-info { color: #fff; background-color: #5bc0de; border-color: #46b8da }
+.modtwoauth-btn-info:focus, .modtwoauth-btn-info.focus { color: #fff; background-color: #31b0d5; border-color: #1b6d85 }
+.modtwoauth-btn-info:hover { color: #fff; background-color: #31b0d5; border-color: #269abc }
+.modtwoauth-btn-info:active, .modtwoauth-btn-info.active, .open > .dropdown-toggle.modtwoauth-btn-info { color: #fff; background-color: #31b0d5; border-color: #269abc }
+.modtwoauth-btn-info:active:hover, .modtwoauth-btn-info.active:hover, .open > .dropdown-toggle.modtwoauth-btn-info:hover, .modtwoauth-btn-info:active:focus, .modtwoauth-btn-info.active:focus, .open > .dropdown-toggle.modtwoauth-btn-info:focus, .modtwoauth-btn-info:active.focus, .modtwoauth-btn-info.active.focus, .open > .dropdown-toggle.modtwoauth-btn-info.focus { color: #fff; background-color: #269abc; border-color: #1b6d85 }
+.modtwoauth-btn-info:active, .modtwoauth-btn-info.active, .open > .dropdown-toggle.modtwoauth-btn-info { background-image: none }
+.modtwoauth-btn-info.disabled:hover, .modtwoauth-btn-info[disabled]:hover, fieldset[disabled] .modtwoauth-btn-info:hover, .modtwoauth-btn-info.disabled:focus, .modtwoauth-btn-info[disabled]:focus, fieldset[disabled] .modtwoauth-btn-info:focus, .modtwoauth-btn-info.disabled.focus, .modtwoauth-btn-info[disabled].focus, fieldset[disabled] .modtwoauth-btn-info.focus { background-color: #5bc0de; border-color: #46b8da }
+.modtwoauth-btn-info .badge { color: #5bc0de; background-color: #fff }
+.modtwoauth-btn-warning { color: #fff; background-color: #f0ad4e; border-color: #eea236 }
+.modtwoauth-btn-warning:focus, .modtwoauth-btn-warning.focus { color: #fff; background-color: #ec971f; border-color: #985f0d }
+.modtwoauth-btn-warning:hover { color: #fff; background-color: #ec971f; border-color: #d58512 }
+.modtwoauth-btn-warning:active, .modtwoauth-btn-warning.active, .open > .dropdown-toggle.modtwoauth-btn-warning { color: #fff; background-color: #ec971f; border-color: #d58512 }
+.modtwoauth-btn-warning:active:hover, .modtwoauth-btn-warning.active:hover, .open > .dropdown-toggle.modtwoauth-btn-warning:hover, .modtwoauth-btn-warning:active:focus, .modtwoauth-btn-warning.active:focus, .open > .dropdown-toggle.modtwoauth-btn-warning:focus, .modtwoauth-btn-warning:active.focus, .modtwoauth-btn-warning.active.focus, .open > .dropdown-toggle.modtwoauth-btn-warning.focus { color: #fff; background-color: #d58512; border-color: #985f0d }
+.modtwoauth-btn-warning:active, .modtwoauth-btn-warning.active, .open > .dropdown-toggle.modtwoauth-btn-warning { background-image: none }
+.modtwoauth-btn-warning.disabled:hover, .modtwoauth-btn-warning[disabled]:hover, fieldset[disabled] .modtwoauth-btn-warning:hover, .modtwoauth-btn-warning.disabled:focus, .modtwoauth-btn-warning[disabled]:focus, fieldset[disabled] .modtwoauth-btn-warning:focus, .modtwoauth-btn-warning.disabled.focus, .modtwoauth-btn-warning[disabled].focus, fieldset[disabled] .modtwoauth-btn-warning.focus { background-color: #f0ad4e; border-color: #eea236 }
+.modtwoauth-btn-warning .badge { color: #f0ad4e; background-color: #fff }
+.modtwoauth-btn-danger { color: #fff; background-color: #d9534f; border-color: #d43f3a }
+.modtwoauth-btn-danger:focus, .modtwoauth-btn-danger.focus { color: #fff; background-color: #c9302c; border-color: #761c19 }
+.modtwoauth-btn-danger:hover { color: #fff; background-color: #c9302c; border-color: #ac2925 }
+.modtwoauth-btn-danger:active, .modtwoauth-btn-danger.active, .open > .dropdown-toggle.modtwoauth-btn-danger { color: #fff; background-color: #c9302c; border-color: #ac2925 }
+.modtwoauth-btn-danger:active:hover, .modtwoauth-btn-danger.active:hover, .open > .dropdown-toggle.modtwoauth-btn-danger:hover, .modtwoauth-btn-danger:active:focus, .modtwoauth-btn-danger.active:focus, .open > .dropdown-toggle.modtwoauth-btn-danger:focus, .modtwoauth-btn-danger:active.focus, .modtwoauth-btn-danger.active.focus, .open > .dropdown-toggle.modtwoauth-btn-danger.focus { color: #fff; background-color: #ac2925; border-color: #761c19 }
+.modtwoauth-btn-danger:active, .modtwoauth-btn-danger.active, .open > .dropdown-toggle.modtwoauth-btn-danger { background-image: none }
+.modtwoauth-btn-danger.disabled:hover, .modtwoauth-btn-danger[disabled]:hover, fieldset[disabled] .modtwoauth-btn-danger:hover, .modtwoauth-btn-danger.disabled:focus, .modtwoauth-btn-danger[disabled]:focus, fieldset[disabled] .modtwoauth-btn-danger:focus, .modtwoauth-btn-danger.disabled.focus, .modtwoauth-btn-danger[disabled].focus, fieldset[disabled] .modtwoauth-btn-danger.focus { background-color: #d9534f; border-color: #d43f3a }
+.modtwoauth-btn-danger .badge { color: #d9534f; background-color: #fff }
+.modtwoauth-btn-link { color: #337ab7; font-weight: normal; border-radius: 0 }
+.modtwoauth-btn-link, .modtwoauth-btn-link:active, .modtwoauth-btn-link.active, .modtwoauth-btn-link[disabled], fieldset[disabled] .modtwoauth-btn-link { background-color: transparent; -webkit-box-shadow: none; box-shadow: none }
+.modtwoauth-btn-link, .modtwoauth-btn-link:hover, .modtwoauth-btn-link:focus, .modtwoauth-btn-link:active { border-color: transparent }
+.modtwoauth-btn-link:hover, .modtwoauth-btn-link:focus { color: #23527c; text-decoration: underline; background-color: transparent }
+.modtwoauth-btn-link[disabled]:hover, fieldset[disabled] .modtwoauth-btn-link:hover, .modtwoauth-btn-link[disabled]:focus, fieldset[disabled] .modtwoauth-btn-link:focus { color: #777; text-decoration: none }
+.modtwoauth-btn-lg { padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-radius: 6px }
+.modtwoauth-btn-sm { padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px }
+.modtwoauth-btn-xs { padding: 1px 5px; font-size: 12px; line-height: 1.5; border-radius: 3px }
+.modtwoauth-btn-block { display: block; width: 100% }
+.modtwoauth-btn-block + .modtwoauth-btn-block { margin-top: 5px }
+
+/* Manager dashboard */
+/* The MODX manager .container class provides the standard 15px horizontal and 20px vertical margins. */
+.modtwoauth-manager-home { box-sizing: border-box; }
+.modtwoauth-manager-home .x-panel-body { background: transparent; }
+.modtwoauth-page-title h2 { margin: 0; color: #1d2c3d; font-size: 24px; font-weight: 600; line-height: 1.3; }
+.modtwoauth-security-diagnostics { box-sizing: border-box; color: #263445; }
+.m2a-dashboard { box-sizing: border-box; width: 100%; margin: 8px 0 22px; padding: 0; overflow: hidden; color: #263445; background: #fff; border: 1px solid #d9e2ec; border-radius: 10px; box-shadow: 0 2px 8px rgba(25, 45, 70, .045); }
+.m2a-dashboard * { box-sizing: border-box; }
+.m2a-dashboard__header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 26px; background: linear-gradient(120deg, #f8fbff 0%, #fff 72%); border-bottom: 1px solid #e7edf4; }
+.m2a-eyebrow { margin-bottom: 7px; color: #4775a8; font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+.m2a-dashboard__header h2 { margin: 0 0 7px; color: #1d2c3d; font-size: 22px; font-weight: 650; line-height: 1.3; }
+.m2a-dashboard__header p { margin: 0; color: #627286; font-size: 13px; line-height: 1.55; }
+.m2a-summary { display: flex; flex: 0 0 auto; align-items: center; gap: 10px; padding: 11px 14px; color: #47617c; background: #f0f6fc; border: 1px solid #dce9f6; border-radius: 8px; font-size: 12px; }
+.m2a-summary__number { color: #176b45; font-size: 24px; font-weight: 700; line-height: 1; }
+.m2a-checks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; padding: 4px 22px; }
+.m2a-check { display: flex; align-items: flex-start; gap: 12px; min-width: 0; padding: 17px 6px; border-bottom: 1px solid #edf1f5; }
+.m2a-check:nth-last-child(-n+2) { border-bottom: 0; }
+.m2a-check__icon { display: flex; flex: 0 0 26px; align-items: center; justify-content: center; width: 26px; height: 26px; margin-top: 1px; border-radius: 50%; font-size: 14px; font-weight: 700; }
+.m2a-check.is-ok .m2a-check__icon { color: #176b45; background: #e4f5eb; }
+.m2a-check.is-warning .m2a-check__icon { color: #8a5200; background: #fff0d2; }
+.m2a-check__body { flex: 1 1 auto; min-width: 0; }
+.m2a-check__title { margin-bottom: 4px; color: #24364a; font-size: 13px; font-weight: 700; line-height: 1.45; }
+.m2a-check__body p { margin: 0; color: #637286; font-size: 12px; line-height: 1.55; overflow-wrap: anywhere; }
+.m2a-check__status { flex: 0 0 auto; margin-left: 4px; padding: 4px 7px; border-radius: 5px; font-size: 10px; font-weight: 700; white-space: nowrap; }
+.m2a-check.is-ok .m2a-check__status { color: #176b45; background: #eaf7ef; }
+.m2a-check.is-warning .m2a-check__status { color: #805000; background: #fff4df; }
+.m2a-dashboard__footer { display: flex; gap: 10px; padding: 14px 26px; color: #64748b; background: #f8fafc; border-top: 1px solid #e7edf4; font-size: 11px; line-height: 1.55; }
+.m2a-dashboard__footer strong { flex: 0 0 auto; color: #34465a; }
+@media (max-width: 900px) { .m2a-checks { grid-template-columns: minmax(0, 1fr); } .m2a-check:nth-last-child(-n+2) { border-bottom: 1px solid #edf1f5; } .m2a-check:last-child { border-bottom: 0; } }
+@media (max-width: 600px) { .m2a-dashboard__header { align-items: flex-start; flex-direction: column; padding: 18px; gap: 14px; } .m2a-checks { padding: 2px 14px; } .m2a-check { flex-wrap: wrap; } .m2a-check__status { margin-left: 38px; } .m2a-dashboard__footer { padding: 13px 18px; } }
+
+
+/* Manager home spacing: do not rely on MODX/Bootstrap .container defaults.
+   ExtJS sets dimensions inline, so enforce the outer margins and account for them
+   in the width to prevent the panel from touching the content edges. */
+.modtwoauth-manager-home {
+    box-sizing: border-box !important;
+    width: calc(100% - 30px) !important;
+    max-width: calc(100% - 30px) !important;
+    min-width: 0 !important;
+    margin: 20px 15px !important;
+}
+.modtwoauth-manager-home > .x-panel-body,
+.modtwoauth-manager-home .x-panel-body {
+    box-sizing: border-box;
+    min-width: 0;
+    background: transparent;
+}
+.modtwoauth-manager-home .modtwoauth-page-title {
+    margin: 4px 0 14px !important;
+}
+.modtwoauth-manager-home .modtwoauth-security-diagnostics {
+    min-width: 0;
+    margin: 0 0 12px !important;
+}
+@media (max-width: 640px) {
+    .modtwoauth-manager-home {
+        width: calc(100% - 20px) !important;
+        max-width: calc(100% - 20px) !important;
+        margin: 12px 10px !important;
+    }
+}

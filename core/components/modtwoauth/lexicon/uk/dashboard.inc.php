@@ -1,0 +1,41 @@
+<?php
+
+// Manager dashboard and menu translations.
+$_lang['modtwoauth_diag_eyebrow'] = 'БЕЗПЕКА · ОГЛЯД';
+$_lang['modtwoauth_diag_title'] = 'Діагностика безпеки ModTwoAuth';
+$_lang['modtwoauth_diag_subtitle'] = 'Стан ключових налаштувань і компонентів двофакторної автентифікації.';
+$_lang['modtwoauth_diag_summary'] = 'перевірок пройдено';
+$_lang['modtwoauth_diag_key'] = 'Ключ шифрування TOTP';
+$_lang['modtwoauth_diag_key_ok'] = 'Ключ знайдено. Зберігайте його окремо від публічних файлів і включайте до захищених резервних копій.';
+$_lang['modtwoauth_diag_key_fail'] = 'Ключ не знайдено або недоступний для читання. Перевірте шлях у modtwoauth_key_path і права на файл ключа.';
+$_lang['modtwoauth_diag_sodium'] = 'PHP sodium';
+$_lang['modtwoauth_diag_sodium_ok'] = 'Розширення доступне.';
+$_lang['modtwoauth_diag_sodium_fail'] = 'Розширення відсутнє; шифрування TOTP недоступне.';
+$_lang['modtwoauth_diag_https'] = 'HTTPS поточного запиту';
+$_lang['modtwoauth_diag_https_ok'] = 'Поточний запит використовує HTTPS.';
+$_lang['modtwoauth_diag_https_fail'] = 'Поточний запит не розпізнано як HTTPS. Перевірте TLS і довірену конфігурацію reverse proxy.';
+$_lang['modtwoauth_diag_cookie_secure'] = 'Cookie Secure';
+$_lang['modtwoauth_diag_cookie_secure_ok'] = 'Увімкнено в конфігурації PHP.';
+$_lang['modtwoauth_diag_cookie_secure_fail'] = 'Не увімкнено в PHP. Налаштуйте Secure на HTTPS-сайті після перевірки Manager і фронтенду.';
+$_lang['modtwoauth_diag_cookie_httponly'] = 'Cookie HttpOnly';
+$_lang['modtwoauth_diag_cookie_httponly_ok'] = 'Увімкнено в конфігурації PHP.';
+$_lang['modtwoauth_diag_cookie_httponly_fail'] = 'Не увімкнено в PHP; увімкніть для сесійних cookies.';
+$_lang['modtwoauth_diag_csp'] = 'CSP Report-Only';
+$_lang['modtwoauth_diag_csp_ok'] = 'Режим звітності увімкнено. Вивчайте порушення в інструментах розробника браузера.';
+$_lang['modtwoauth_diag_csp_fail'] = 'Вимкнено. Увімкніть після перевірки сумісності.';
+$_lang['modtwoauth_diag_migration'] = 'Міграція секретів TOTP';
+$_lang['modtwoauth_diag_migration_ok'] = 'Відкритих legacy-секретів не виявлено.';
+$_lang['modtwoauth_diag_migration_fail'] = 'Знайдено незашифровані записи: {count}. Повторіть оновлення пакета і перевірте журнал MODX.';
+$_lang['modtwoauth_diag_migration_error'] = 'Не вдалося перевірити стан міграції. Перевірте таблицю налаштувань.';
+$_lang['modtwoauth_diag_plugin'] = 'Плагін [[+name]]';
+$_lang['modtwoauth_diag_plugin_ok'] = 'Активний; перевіряйте журнал і тестуйте відкликання сесій.';
+$_lang['modtwoauth_diag_plugin_fail'] = 'Не знайдено або вимкнено; захист відкликання сесій може не працювати.';
+$_lang['modtwoauth_diag_plugin_guard'] = 'Плагін modTwoAuthSessionGuard';
+$_lang['modtwoauth_diag_plugin_guard_ok'] = 'Захищає сесії Manager і допомагає відкликати доступ при підозрілій активності.';
+$_lang['modtwoauth_diag_plugin_frontend'] = 'Плагін modTwoAuthFrontendSessions';
+$_lang['modtwoauth_diag_plugin_frontend_ok'] = 'Керує сесіями відвідувачів сайту і забезпечує їх коректне завершення.';
+$_lang['modtwoauth_diag_status_ok'] = 'В порядку';
+$_lang['modtwoauth_diag_status_warn'] = 'Перевірте';
+$_lang['modtwoauth_diag_important'] = 'Важливо';
+$_lang['modtwoauth_diag_footer'] = 'Діагностика не замінює аудит коду і конфігурації веб-сервера. Перед увімкненням строгих політик безпеки перевірте сумісність Manager і фронтенду.';
+$_lang['modtwoauth_menu_desc'] = 'Керування двофакторною автентифікацією та безпекою.';

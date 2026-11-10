@@ -1,0 +1,43 @@
+<?php
+
+// WebAuthn / Passkey registration and login.
+$_lang['modtwoauth_webauthn_disable_before_register'] = 'First disable the current 2FA, then register a new key.';
+$_lang['modtwoauth_webauthn_fatal'] = 'A critical server error occurred while processing WebAuthn. Check the MODX log.';
+$_lang['modtwoauth_webauthn_frontend_error'] = 'WebAuthn error. Check the MODX log.';
+$_lang['modtwoauth_webauthn_internal_error'] = 'Internal WebAuthn error. Details have been written to the MODX log.';
+$_lang['modtwoauth_webauthn_invalid_base64'] = 'The server returned invalid WebAuthn Base64URL data.';
+$_lang['modtwoauth_webauthn_invalid_data'] = 'Invalid WebAuthn data.';
+$_lang['modtwoauth_webauthn_invalid_rpid'] = 'Invalid WebAuthn RP ID.';
+$_lang['modtwoauth_webauthn_login_to_register'] = 'Sign in to the site account to register a Passkey.';
+$_lang['modtwoauth_webauthn_not_enabled_account'] = 'WebAuthn is not enabled for this account.';
+$_lang['modtwoauth_webauthn_not_enabled_user'] = 'WebAuthn is not enabled for this user.';
+$_lang['modtwoauth_webauthn_registered'] = 'The WebAuthn key has been registered successfully. You can now enable it as a 2FA method.';
+$_lang['modtwoauth_webauthn_rejected'] = 'WebAuthn rejected.';
+$_lang['modtwoauth_webauthn_save_failed'] = 'Failed to save the WebAuthn settings. Registration cancelled.';
+$_lang['modtwoauth_webauthn_session_expired'] = 'The WebAuthn session has expired. Sign in again.';
+$_lang['modtwoauth_webauthn_settings_save_failed'] = 'Failed to save the WebAuthn settings.';
+$_lang['modtwoauth_webauthn_start_failed'] = 'Failed to start WebAuthn.';
+$_lang['modtwoauth_webauthn_registration_expired'] = 'The WebAuthn registration session has expired. Start again.';
+$_lang['modtwoauth_webauthn_invalid_type'] = 'Invalid WebAuthn response type.';
+$_lang['modtwoauth_webauthn_invalid_challenge'] = 'WebAuthn challenge verification failed. Reload the page and try again.';
+$_lang['modtwoauth_webauthn_invalid_origin'] = 'The WebAuthn origin does not match the site domain.';
+$_lang['modtwoauth_webauthn_attestation_parse_failed'] = 'Failed to parse the WebAuthn registration data.';
+$_lang['modtwoauth_webauthn_authenticator_missing'] = 'The WebAuthn response is missing authenticator data.';
+$_lang['modtwoauth_webauthn_authenticator_invalid'] = 'Invalid WebAuthn authenticator data.';
+$_lang['modtwoauth_webauthn_rp_mismatch'] = 'The RP ID does not match the site domain.';
+$_lang['modtwoauth_webauthn_registration_not_confirmed'] = 'The authenticator did not confirm the registration.';
+$_lang['modtwoauth_webauthn_credential_id_missing'] = 'The WebAuthn response is missing the key ID.';
+$_lang['modtwoauth_webauthn_credential_id_invalid'] = 'Invalid WebAuthn key ID.';
+$_lang['modtwoauth_webauthn_credential_id_mismatch'] = 'The WebAuthn key ID does not match the authenticator data.';
+$_lang['modtwoauth_webauthn_raw_id_mismatch'] = 'The received WebAuthn key ID does not match the original data.';
+$_lang['modtwoauth_webauthn_public_key_missing'] = 'The WebAuthn response is missing the public key.';
+$_lang['modtwoauth_webauthn_cose_invalid'] = 'Failed to read the WebAuthn public key.';
+$_lang['modtwoauth_webauthn_cose_unsupported'] = 'The WebAuthn key algorithm is not supported. Use ES256 or RS256.';
+$_lang['modtwoauth_webauthn_already_registered'] = 'This key is already registered.';
+$_lang['modtwoauth_webauthn_login_expired_refresh'] = 'The WebAuthn login session has expired. Reload the page and sign in again.';
+$_lang['modtwoauth_webauthn_not_registered_for_user'] = 'This key is not registered for the current user.';
+$_lang['modtwoauth_webauthn_user_not_present'] = 'The authenticator did not confirm user presence.';
+$_lang['modtwoauth_webauthn_counter_invalid'] = 'The WebAuthn key counter did not increase. The key may have been cloned.';
+$_lang['modtwoauth_webauthn_public_key_read_failed'] = 'Failed to read the saved WebAuthn public key.';
+$_lang['modtwoauth_webauthn_signature_invalid'] = 'The WebAuthn signature is invalid.';
+$_lang['modtwoauth_webauthn_counter_save_failed'] = 'Failed to save the WebAuthn counter. Sign in again.';

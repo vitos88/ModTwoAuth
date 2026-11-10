@@ -1,0 +1,31 @@
+1.0.0-pl
+==============
+## 🇬🇧 English
+--------------
+First public release.
+
+**Authentication methods:** TOTP (RFC 6238, window ±1), Email codes, Telegram (QR/deep-link binding, login via code or a button in the bot), WebAuthn/FIDO2/Passkeys (ES256/RS256/Ed25519) — for both the manager and the frontend.
+
+**Security:**
+
+- Protection against reuse of TOTP codes (the timestep of the last accepted code is stored in the database).
+- The Telegram webhook rejects all requests without a secret; the secret is derived from the bot token; only hashes of one-time tokens are stored in the database; login confirmation is bound to the chat and the session.
+- Rate limiting for sending email codes (modtwoauth_resend_cooldown); a global limit on failed attempts with lockout that persists in the database; per-method attempt limits during setup.
+- Session ID regeneration after 2FA in all flows; session lists and individual revocation; modtwoauth_session_max_age forcibly terminates stale 2FA sessions.
+- TOTP secrets are encrypted with libsodium XChaCha20-Poly1305; the key can be moved outside the component (system setting); automatic migration of plaintext secrets on install.
+- CSRF tokens on all confirmation forms; optional CSP Report-Only; security diagnostics in the panel.
+
+## 🇷🇺 Русский
+--------------
+Первый публичный релиз.
+
+**Методы аутентификации:** TOTP (RFC 6238, окно ±1), Email-коды, Telegram (QR/deep-link привязка, вход кодом или кнопкой в боте), WebAuthn/FIDO2/Passkeys (ES256/RS256/Ed25519) — для менеджера и фронтенда.
+
+**Безопасность:**
+
+- Защита от повторного использования TOTP-кода (timestep последнего принятого кода в БД).
+- Telegram-вебхук отвергает все запросы без секрета; секрет выводится из токена бота; в БД только хеши одноразовых токенов; подтверждение входа привязано к чату и сессии.
+- Ограничена частота отправки email-кодов (`modtwoauth_resend_cooldown`); общий лимит неверных попыток с блокировкой, персистентной в БД; при настройке методов — свои лимиты попыток.
+- Регенерация ID сессии после 2FA во всех потоках; списки сессий и отзыв по одной; `modtwoauth_session_max_age` принудительно завершает устаревшие 2FA-сессии.
+- TOTP-секреты шифруются libsodium XChaCha20-Poly1305; ключ можно выносится за пределы компонента (системная настройка); автоматическая миграция открытых секретов при установке.
+- CSRF-токены на всех формах подтверждения; опциональный CSP Report-Only; диагностика безопасности в панели.

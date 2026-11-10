@@ -1,0 +1,43 @@
+<?php
+
+// WebAuthn / Passkey registration and login.
+$_lang['modtwoauth_webauthn_disable_before_register'] = 'Primero desactive la 2FA actual y luego registre la nueva llave.';
+$_lang['modtwoauth_webauthn_fatal'] = 'Error crítico del servidor al procesar WebAuthn. Revise el registro de MODX.';
+$_lang['modtwoauth_webauthn_frontend_error'] = 'Error de WebAuthn. Revise el registro de MODX.';
+$_lang['modtwoauth_webauthn_internal_error'] = 'Error interno de WebAuthn. Los detalles se han registrado en el registro de MODX.';
+$_lang['modtwoauth_webauthn_invalid_base64'] = 'El servidor devolvió datos WebAuthn Base64URL incorrectos.';
+$_lang['modtwoauth_webauthn_invalid_data'] = 'Datos WebAuthn incorrectos.';
+$_lang['modtwoauth_webauthn_invalid_rpid'] = 'WebAuthn RP ID incorrecto.';
+$_lang['modtwoauth_webauthn_login_to_register'] = 'Inicie sesión en la cuenta del sitio para registrar un Passkey.';
+$_lang['modtwoauth_webauthn_not_enabled_account'] = 'WebAuthn no está activado para esta cuenta.';
+$_lang['modtwoauth_webauthn_not_enabled_user'] = 'WebAuthn no está activado para este usuario.';
+$_lang['modtwoauth_webauthn_registered'] = 'La llave WebAuthn se ha registrado correctamente. Ya puede activarla como método de 2FA.';
+$_lang['modtwoauth_webauthn_rejected'] = 'WebAuthn rechazado.';
+$_lang['modtwoauth_webauthn_save_failed'] = 'No se pudo guardar la configuración de WebAuthn. Registro cancelado.';
+$_lang['modtwoauth_webauthn_session_expired'] = 'La sesión de WebAuthn ha expirado. Inicie sesión de nuevo.';
+$_lang['modtwoauth_webauthn_settings_save_failed'] = 'No se pudo guardar la configuración de WebAuthn.';
+$_lang['modtwoauth_webauthn_start_failed'] = 'No se pudo iniciar WebAuthn.';
+$_lang['modtwoauth_webauthn_registration_expired'] = 'La sesión de registro de WebAuthn ha expirado. Comience de nuevo.';
+$_lang['modtwoauth_webauthn_invalid_type'] = 'Tipo de respuesta WebAuthn incorrecto.';
+$_lang['modtwoauth_webauthn_invalid_challenge'] = 'Fallo al verificar el challenge de WebAuthn. Recargue la página e inténtelo de nuevo.';
+$_lang['modtwoauth_webauthn_invalid_origin'] = 'El origen de WebAuthn no coincide con el dominio del sitio.';
+$_lang['modtwoauth_webauthn_attestation_parse_failed'] = 'No se pudieron analizar los datos de registro de WebAuthn.';
+$_lang['modtwoauth_webauthn_authenticator_missing'] = 'Faltan los datos del autenticador en la respuesta WebAuthn.';
+$_lang['modtwoauth_webauthn_authenticator_invalid'] = 'Datos del autenticador WebAuthn incorrectos.';
+$_lang['modtwoauth_webauthn_rp_mismatch'] = 'El RP ID no coincide con el dominio del sitio.';
+$_lang['modtwoauth_webauthn_registration_not_confirmed'] = 'El autenticador no confirmó el registro.';
+$_lang['modtwoauth_webauthn_credential_id_missing'] = 'Falta el ID de la llave en la respuesta WebAuthn.';
+$_lang['modtwoauth_webauthn_credential_id_invalid'] = 'ID de llave WebAuthn incorrecto.';
+$_lang['modtwoauth_webauthn_credential_id_mismatch'] = 'El ID de la llave WebAuthn no coincide con los datos del autenticador.';
+$_lang['modtwoauth_webauthn_raw_id_mismatch'] = 'El ID de la llave WebAuthn recibido no coincide con los datos originales.';
+$_lang['modtwoauth_webauthn_public_key_missing'] = 'Falta la clave pública en la respuesta WebAuthn.';
+$_lang['modtwoauth_webauthn_cose_invalid'] = 'No se pudo leer la clave pública de WebAuthn.';
+$_lang['modtwoauth_webauthn_cose_unsupported'] = 'El algoritmo de la llave WebAuthn no es compatible. Use ES256 o RS256.';
+$_lang['modtwoauth_webauthn_already_registered'] = 'Esta llave ya está registrada.';
+$_lang['modtwoauth_webauthn_login_expired_refresh'] = 'La sesión de inicio de sesión de WebAuthn ha expirado. Recargue la página e inicie sesión de nuevo.';
+$_lang['modtwoauth_webauthn_not_registered_for_user'] = 'Esta llave no está registrada para el usuario actual.';
+$_lang['modtwoauth_webauthn_user_not_present'] = 'El autenticador no confirmó la presencia del usuario.';
+$_lang['modtwoauth_webauthn_counter_invalid'] = 'El contador de la llave WebAuthn no aumentó. Es posible que la llave haya sido clonada.';
+$_lang['modtwoauth_webauthn_public_key_read_failed'] = 'No se pudo leer la clave pública de WebAuthn guardada.';
+$_lang['modtwoauth_webauthn_signature_invalid'] = 'La firma de WebAuthn no es válida.';
+$_lang['modtwoauth_webauthn_counter_save_failed'] = 'No se pudo guardar el contador de WebAuthn. Inicie sesión de nuevo.';

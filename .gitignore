@@ -1,0 +1,12 @@
+# OS / Explorer
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+.fseventsd
+__MACOSX/
+Thumbs.db
+desktop.ini
+
+# Local полный док
+README_full.md

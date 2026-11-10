@@ -1,0 +1,41 @@
+<?php
+
+// Manager dashboard and menu translations.
+$_lang['modtwoauth_diag_eyebrow'] = 'SEGURIDAD · RESUMEN';
+$_lang['modtwoauth_diag_title'] = 'Diagnóstico de seguridad de ModTwoAuth';
+$_lang['modtwoauth_diag_subtitle'] = 'Estado de los ajustes y componentes clave de la autenticación de dos factores.';
+$_lang['modtwoauth_diag_summary'] = 'comprobaciones superadas';
+$_lang['modtwoauth_diag_key'] = 'Clave de cifrado TOTP';
+$_lang['modtwoauth_diag_key_ok'] = 'Clave encontrada. Guárdela separada de los archivos públicos e inclúyala en las copias de seguridad protegidas.';
+$_lang['modtwoauth_diag_key_fail'] = 'Clave no encontrada o ilegible. Compruebe la ruta en modtwoauth_key_path y los permisos del archivo de clave.';
+$_lang['modtwoauth_diag_sodium'] = 'PHP sodium';
+$_lang['modtwoauth_diag_sodium_ok'] = 'La extensión está disponible.';
+$_lang['modtwoauth_diag_sodium_fail'] = 'La extensión no está presente; el cifrado TOTP no está disponible.';
+$_lang['modtwoauth_diag_https'] = 'HTTPS de la solicitud actual';
+$_lang['modtwoauth_diag_https_ok'] = 'La solicitud actual usa HTTPS.';
+$_lang['modtwoauth_diag_https_fail'] = 'La solicitud actual no se reconoce como HTTPS. Compruebe TLS y la configuración de confianza del proxy inverso.';
+$_lang['modtwoauth_diag_cookie_secure'] = 'Cookie Secure';
+$_lang['modtwoauth_diag_cookie_secure_ok'] = 'Activado en la configuración de PHP.';
+$_lang['modtwoauth_diag_cookie_secure_fail'] = 'No activado en PHP. Configure Secure en el sitio HTTPS tras comprobar el Manager y el frontend.';
+$_lang['modtwoauth_diag_cookie_httponly'] = 'Cookie HttpOnly';
+$_lang['modtwoauth_diag_cookie_httponly_ok'] = 'Activado en la configuración de PHP.';
+$_lang['modtwoauth_diag_cookie_httponly_fail'] = 'No activado en PHP; actívelo para las cookies de sesión.';
+$_lang['modtwoauth_diag_csp'] = 'CSP Report-Only';
+$_lang['modtwoauth_diag_csp_ok'] = 'El modo de informes está activado. Revise las infracciones en las herramientas de desarrollador del navegador.';
+$_lang['modtwoauth_diag_csp_fail'] = 'Desactivado. Actívelo tras comprobar la compatibilidad.';
+$_lang['modtwoauth_diag_migration'] = 'Migración de secretos TOTP';
+$_lang['modtwoauth_diag_migration_ok'] = 'No se han detectado secretos heredados en claro.';
+$_lang['modtwoauth_diag_migration_fail'] = 'Se encontraron registros sin cifrar: {count}. Repita la actualización del paquete y revise el registro de MODX.';
+$_lang['modtwoauth_diag_migration_error'] = 'No se pudo comprobar el estado de la migración. Revise la tabla de ajustes.';
+$_lang['modtwoauth_diag_plugin'] = 'Plugin [[+name]]';
+$_lang['modtwoauth_diag_plugin_ok'] = 'Activo; revise el registro y pruebe la revocación de sesiones.';
+$_lang['modtwoauth_diag_plugin_fail'] = 'No encontrado o desactivado; la protección de revocación de sesiones puede no funcionar.';
+$_lang['modtwoauth_diag_plugin_guard'] = 'Plugin modTwoAuthSessionGuard';
+$_lang['modtwoauth_diag_plugin_guard_ok'] = 'Protege las sesiones del Manager y ayuda a revocar el acceso ante actividad sospechosa.';
+$_lang['modtwoauth_diag_plugin_frontend'] = 'Plugin modTwoAuthFrontendSessions';
+$_lang['modtwoauth_diag_plugin_frontend_ok'] = 'Gestiona las sesiones de los visitantes del sitio y garantiza su cierre correcto.';
+$_lang['modtwoauth_diag_status_ok'] = 'Correcto';
+$_lang['modtwoauth_diag_status_warn'] = 'Revisar';
+$_lang['modtwoauth_diag_important'] = 'Importante';
+$_lang['modtwoauth_diag_footer'] = 'El diagnóstico no sustituye a una auditoría del código y de la configuración del servidor web. Antes de activar políticas de seguridad estrictas, compruebe la compatibilidad del Manager y del frontend.';
+$_lang['modtwoauth_menu_desc'] = 'Gestión de la autenticación de dos factores y la seguridad.';
